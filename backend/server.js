@@ -5,7 +5,8 @@ const router = require('./router.js')
 
 const app = new Koa();
 
-app.use(cors())
+app
+.use(cors())
 .use(serve('./images'))
 .use(router.routes());
 
